@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Chat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/barre"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/inco"
+            android:onClick="inco"
+            android:layout_margin="3dp"
+            android:text="Inconnues"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/psy"
+            android:onClick="psych"
+            android:layout_margin="3dp"
+            android:text="Psycho"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/para"
+            android:onClick="param"
+            android:layout_margin="3dp"
+            android:text="Paramètre"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barre"
+        android:fillViewport="false">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/sugg"
+      android:orientation="vertical">
+<LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="5dp"
+      android:id="@+id/sugg1"
+      android:layout_marginBottom="9dp"
+       android:orientation="horizontal">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/woman1"
+        android:contentDescription="personne" />
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+      android:orientation="vertical">
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="25dp"
+        android:text="  Doumbe"
+        android:id="@+id/perso1"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+      android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="25dp"
+      android:text="  malheureux ; triste ; peur"
+      android:textSize="12sp"/>
+    </LinearLayout>
+
+  </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/sugg1"
+        android:id="@+id/sugg2"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/woman1"
+          android:contentDescription="personne" />
+      <LinearLayout
+          android:layout_width="450dp"
+          android:layout_height="50dp"
+          android:orientation="vertical">
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="25dp"
+            android:text="  lalala"
+            android:id="@+id/perso2"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="25dp"
+            android:text="  malheureux "
+            android:textSize="12sp"/>
+      </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+      android:layout_below="@id/sugg2"
+      android:id="@+id/sugg3"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/woman1"
+          android:contentDescription="personne" />
+      <LinearLayout
+          android:layout_width="450dp"
+          android:layout_height="50dp"
+          android:orientation="vertical">
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="25dp"
+            android:text="  jinja"
+            android:id="@+id/perso3"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="450dp"
+            android:layout_height="25dp"
+            android:text="  heureux ; joie "
+            android:textSize="12sp"/>
+      </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg3"
+          android:id="@+id/sugg4"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text=" joue"
+                  android:id="@+id/perso4"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  rien"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg4"
+          android:id="@+id/sugg5"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Dark"
+                  android:id="@+id/perso5"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ;  peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg5"
+          android:id="@+id/sugg6"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Riba"
+                  android:id="@+id/perso6"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  pleurer ; crier "
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg6"
+          android:id="@+id/sugg7"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Grrrrr"
+                  android:id="@+id/perso7"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ; triste ; peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg7"
+          android:id="@+id/sugg8"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Pouuuf"
+                  android:id="@+id/perso8"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux "
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg8"
+          android:id="@+id/sugg9"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  HjHj"
+                  android:id="@+id/perso9"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  dormir ; manger"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg9"
+          android:id="@+id/sugg10"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Sinon"
+                  android:id="@+id/perso10"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ; triste ; peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg10"
+          android:id="@+id/sugg11"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  DfDf"
+                  android:id="@+id/perso11"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ; triste ; peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg11"
+          android:id="@+id/sugg12"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Nounou"
+                  android:id="@+id/perso12"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ; triste ; peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg12"
+          android:id="@+id/sugg13"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  SlamDnck"
+                  android:id="@+id/perso13"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Tristesse ; pleurer"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg13"
+          android:id="@+id/sugg14"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  BLABLA"
+                  android:id="@+id/perso14"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ; triste ; peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg14"
+          android:id="@+id/sugg15"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Siri"
+                  android:id="@+id/perso15"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Rien"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+<LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@id/sugg15"
+          android:id="@+id/sugg16"
+          android:layout_marginBottom="9dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:src="@drawable/woman1"
+              android:contentDescription="personne" />
+          <LinearLayout
+              android:layout_width="450dp"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  Dsktrat"
+                  android:id="@+id/perso16"
+                  android:textSize="18sp"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/black"/>
+              <TextView
+                  android:layout_width="450dp"
+                  android:layout_height="25dp"
+                  android:text="  malheureux ; triste ; peur"
+                  android:textSize="12sp"/>
+          </LinearLayout>
+
+      </LinearLayout>
+  </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

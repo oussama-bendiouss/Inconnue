@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Inconnu</string>
+
+    <style name="text_imp" parent="@style/TextAppearance.AppCompat">
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">9dp</item>
+
+    </style>
+</resources>

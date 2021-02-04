@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sociale.inconnu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Inconnu">
+        <activity android:name=".Entreprise" android:label="Espace Entreprise"></activity>
+        <activity
+            android:name=".Parametre"
+            android:label="Parametre" />
+        <activity
+            android:name=".Psycho"
+            android:label="Psycho" />
+        <activity
+            android:name=".Communication"
+            android:label="BlaBla" />
+        <activity
+            android:name=".Chat"
+            android:label="Inconnues" />
+        <activity android:name=".Principale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

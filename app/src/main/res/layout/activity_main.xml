@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bed"
+    android:id="@+id/identify"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barre"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textStyle="italic|bold"
+            android:textSize="16sp"
+            android:onClick="inco"
+            android:id="@+id/inco"
+            android:textColor="#FFBB86FC"
+            android:text="Inconnues"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textStyle="italic|bold"
+            android:textSize="16sp"
+            android:id="@+id/ent"
+            android:onClick="entre"
+            android:textColor="#FFBB86FC"
+            android:text="Entrprise"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/barre"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Pseudo"
+        android:textSize="20sp"
+
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:hint="Entrer un pseudo"
+        android:textSize="12sp"
+        android:textColorHint="@color/white"
+        android:id="@+id/pseudo"
+        android:layout_gravity="center"
+        android:autofillHints="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="Quel votre état d'esprit actuel"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:hint="séparer les par des points virgules "
+        android:textSize="12sp"
+        android:textColorHint="@color/white"
+        android:id="@+id/etat_desprit"
+        android:layout_gravity="center"
+        android:autofillHints="true" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="Vous étes homme/femme?"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/man"
+        android:layout_margin="10dp"
+        android:src="@drawable/man"
+        android:contentDescription="Je suis un homme" />
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/woman"
+            android:layout_margin="10dp"
+            android:src="@drawable/woman"
+            android:contentDescription="Je suis un une femme"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:text="Suivant"
+        android:textSize="18sp"
+        android:id="@+id/suivant"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
