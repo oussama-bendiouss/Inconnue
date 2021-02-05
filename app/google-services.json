@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124669623232",
+    "project_id": "inconnu-64af5",
+    "storage_bucket": "inconnu-64af5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124669623232:android:8455c678e6d0f881dba625",
+        "android_client_info": {
+          "package_name": "com.sociale.inconnu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124669623232-7r7vjmhc5ntjqjqc85tc0oeeg9t9fb67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWmsoNQ0DM49Fx9LGoQw6XbXjaQZgfdnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124669623232-7r7vjmhc5ntjqjqc85tc0oeeg9t9fb67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

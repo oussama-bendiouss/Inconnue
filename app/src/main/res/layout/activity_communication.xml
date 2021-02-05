@@ -11,48 +11,55 @@
     tools:context=".Communication">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/te"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/comm"
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
+            android:autofillHints="true"
+            android:layout_marginBottom="50dp"
             android:layout_gravity="bottom"
             android:hint="entrer votre message"
-            android:autofillHints="true"
-            android:gravity="bottom"
-            android:textColorHint="@color/black"
-            android:id="@+id/comm"/>
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </ScrollView>
+
     <RelativeLayout
+        android:id="@+id/bot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/bot"
+        android:layout_below="@+id/te"
+        android:layout_marginTop="-50dp"
         android:gravity="bottom"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <Switch
             android:id="@+id/switch1"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:switchMinWidth="56dp"
-            android:textSize="18sp"
-            android:textColor="#FF6200EE"
-            android:text="filtre:"
-            android:gravity="left"
             android:checked="true"
+            android:gravity="left"
+            android:switchMinWidth="56dp"
+            android:text="filtre:"
+            android:textColor="#FF6200EE"
             android:textOff="OFF"
-            android:textOn="ON"/>
+            android:textOn="ON"
+            android:textSize="18sp" />
+
         <Button
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:gravity="center"
-            android:textSize="12sp"
             android:layout_marginLeft="160dp"
             android:layout_toRightOf="@id/switch1"
-            android:text="Signaler conversation"/>
+            android:gravity="center"
+            android:text="Signaler conversation"
+            android:textSize="12sp" />
     </RelativeLayout>
 </RelativeLayout>
