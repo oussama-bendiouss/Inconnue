@@ -7,7 +7,7 @@
     android:fillViewport="false"
     android:orientation="vertical"
     android:id="@+id/zone"
-    android:background="@drawable/bed"
+    android:background="@color/green_12"
     tools:context=".Communication">
 
     <ScrollView
@@ -16,7 +16,17 @@
         android:layout_height="match_parent"
 
         android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_gravity="bottom"
+           android:layout_height="match_parent"
+           >
+           <ImageButton
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_alignRight="@id/comm"
 
+               android:src="@drawable/send"/>
         <EditText
             android:id="@+id/comm"
             android:layout_width="match_parent"
@@ -24,10 +34,11 @@
             android:layout_height="wrap_content"
             android:autofillHints="true"
             android:layout_marginBottom="50dp"
-            android:layout_gravity="bottom"
+
             android:hint="entrer votre message"
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
+       </RelativeLayout>
 
     </ScrollView>
 
